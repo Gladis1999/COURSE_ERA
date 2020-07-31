@@ -2,9 +2,9 @@ punctuation_chars = ["'", '"', ",", ".", "!", ":", ";", '#', '@']
 # lists of words to use
 positive_words = []
 with open("positive_words.txt") as pos_f:
-    for lin in pos_f:
-        if lin[0] != ';' and lin[0] != '\n':
-            positive_words.append(lin.strip())
+    for line in pos_f:
+        if line[0] != ';' and line[0] != '\n':
+            positive_words.append(line.strip())
 
 
 negative_words = []
